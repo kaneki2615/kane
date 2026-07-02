@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Tokyo Ghoul</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+    
+</head>
+
+<body>
+
+
+<div class="text-white small fw-bold bg-danger px-2 py-1 rounded shadow-sm">
+    🕒 HORA EN TOKIO: <span id="relojTokio">00:00:00</span>
+</div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger fw-bold" href="index.html">TOKYO GHOUL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="enlace1.html">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" href="enlace2.html">Mapa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        
+        <h1 class="text-center mb-5 text-uppercase">Zona Multimedia</h1>
+
+        <div class="row g-4 align-items-center mb-5">
+            <div class="col-md-6 text-center">
+                <h3 class="mb-3">🎧 Banda Sonora (BGM)</h3>
+                <p class="text-muted small">Escucha el tema principal oficial de la serie.</p>
+                <audio controls class="shadow-sm">
+                    <source src="musica/unravel東京喰種TV Animation 10th Anniversary Collaboration MV.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+            
+            <div class="col-md-6 text-center">
+                <h3 class="mb-3">🎬 Clip de Video</h3>
+                <div class="ratio ratio-16x9 mx-auto" style="max-width: 500px;">
+                    <video src="musica/YTDown_YouTube_Tokyo-Ghoul-Opening-Unravel-by-TK-from-L_Media_7aMOurgDB-o_006_144p.mp4" controls></video>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-secondary my-5">
+
+        <h2 class="mb-4">🖼️ Galería del Distrito 20</h2>
+        <div id="carruselMultimedia" class="carousel slide shadow rounded overflow-hidden mb-5 mx-auto" data-bs-ride="carousel" style="max-width: 700px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagen/Kaneki.jfif" class="d-block w-100" alt="Kaneki" style="height: 350px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagen/Ken Kaneki.jfif" class="d-block w-100" alt="Ken Kaneki" style="height: 350px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagen/Ken Kaneki.jpeg" class="d-block w-100" alt="Modo Kakuja" style="height: 350px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselMultimedia" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselMultimedia" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <hr class="border-secondary my-5">
+
+        <h2 class="mb-4">⚡ Fichas Técnicas de Audio</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card bg-dark text-light border-secondary shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Opening Theme: "Unravel"</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Interpretado por TK from Ling Tosite Sigure</h6>
+                        <p class="card-text text-secondary small">Lanzado en 2014, se convirtió en un fenómeno global debido a su intensa instrumentación de rock progresivo y su letra, la cual captura a la perfección la desesperación y locura psicológica de Ken Kaneki.</p>
+                        <span class="badge bg-danger">Tema Principal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark text-light border-secondary shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Composición del Soundtrack</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">A cargo de Yutaka Yamada</h6>
+                        <p class="card-text text-secondary small">La música de fondo utiliza orquestaciones trágicas mezcladas con elementos electrónicos industriales para ambientar las persecuciones de las palomas de la CCG y las batallas crudas en los distritos de Tokio.</p>
+                        <span class="badge bg-secondary">Banda Sonora</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-secondary my-5">
+
+        <h2 class="mb-4">📌 Especificaciones del Archivo de Audio</h2>
+        <div class="accordion accordion-flush border border-secondary rounded overflow-hidden mb-5" id="acordionMultimedia">
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header" id="headerAudio">
+                    <button class="accordion-button bg-dark text-danger fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudio" aria-expanded="false" aria-controls="collapseAudio">
+                        ¿Cuál es el formato del archivo de sonido adjunto?
+                    </button>
+                </h2>
+                <div id="collapseAudio" class="accordion-collapse collapse" aria-labelledby="headerAudio" data-bs-parent="#acordionMultimedia">
+                    <div class="accordion-body text-light bg-dark small">
+                        El archivo está codificado bajo la extensión estándar **MPEG-Layer 3 (MP3)**, corriendo en estéreo de dos canales para garantizar compatibilidad directa con el elemento nativo de audio de HTML5 sin complementos externos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header" id="headerVideo">
+                    <button class="accordion-button bg-dark text-danger fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo">
+                        ¿Por qué se utiliza una resolución optimizada de video?
+                    </button>
+                </h2>
+                <div id="collapseVideo" class="accordion-collapse collapse" aria-labelledby="headerVideo" data-bs-parent="#acordionMultimedia">
+                    <div class="accordion-body text-light bg-dark small">
+                        El videoclip `144p MP4` está optimizado para transferencias rápidas y bajo consumo de almacenamiento local en el servidor, adaptándose dinámicamente mediante las clases de aspecto (`ratio`) responsivas de Bootstrap.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="mb-3">
+    <label for="buscarPersonaje" class="form-label text-danger fw-bold">🔍 Filtrar Base de Datos de Personajes:</label>
+    <input type="text" id="buscarPersonaje" class="form-control bg-dark text-white border-secondary" placeholder="Escribe el nombre de un personaje...">
+</div>
+
+
+
+        <div class="text-center mt-5">
+            <a href="index.html" class="btn btn-outline-light btn-sm me-2">Vuelve al Inicio</a>
+            <a href="enlace2.html" class="btn btn-outline-danger btn-sm">Ver Mapa Geográfico</a>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script></body>
+</html>
