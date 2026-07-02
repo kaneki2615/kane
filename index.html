@@ -1,213 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Tokyo ghoul</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo ghoul</title>
+    
+    <link rel="icon" type="image/jpeg" href="imagen/Solo.jfif">
     
     <meta name="description" content="Esta es la descripción de mi sitio web para los resultados de Google.">
-
     <meta name="keywords" content="html, programacion, desarrollo web, aprendizaje, mi primera pagina">
-
     <meta name="author" content="Joseph">
-
     <meta name="robots" content="index, follow">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    
     <link rel="stylesheet" href="Css/style.css">
-    <body style="background-image: url('imagen/Fondo.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center;">
-    
 </head>
 
+<body style="background-image: url('imagen/Fondo.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center;">
 
 
-<body>
-    <h1>Tokyo ghoul</h1>
-    <p>Tokyo Ghoul es una serie de manga escrita e ilustrada por Sui Ishida, serializada en la revista seinen Young Jump, con entrega semanal desde septiembre de 2011.</p>
+<li class="nav-item d-flex align-items-center ms-lg-3 mt-2 mt-lg-0">
+    <button id="btnToggleTema" class="btn btn-outline-light btn-sm fw-bold">
+        ☀️ Modo Claro
+    </button>
+</li>
 
-<br>
-<hr>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger fw-bold" href="index.html">TOKYO GHOUL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enlace1.html">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#modalAlerta">Reportar Incidente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Trama</h2>
-    <p><strong>Trata sobre la historia de kaneki un humano que de la noche a la mañana se convierte en un ghoul debido a que conocio a rize(una ghoul) que se lo queria comer pero tuvieron un accidente donde tuvieron que pasarle organos vitales de rize a kaneki.</strong></p>
-
-
-
-<hr>
-
-    <h2>En cuales lugares se desarrolla la trama</h2>
-    
-    <div class="caja-padding">
-        <strong>Ciudad:</strong> Tokyo Ghoul se desarrolla en una versión alternativa y oscura de Tokio (Japón), una metrópolis secreta dividida en 24 distritos especiales. En este universo, humanos y ghouls (criaturas que deben consumir carne humana para sobrevivir) coexisten en una tensa y mortal dinámica social
+    <div class="panel-fijo-alerta shadow-lg border border-danger rounded p-3 text-center" style="position: fixed; bottom: 20px; right: 20px; width: 250px; background-color: #0b0b0b; z-index: 1050; box-shadow: 0 0 15px rgba(255, 26, 26, 0.5) !important;">
+        <span class="d-block fw-bold text-danger text-uppercase mb-2">⚠️ ALERTA CCG ⚠️</span>
+        <p class="m-0 text-white small fw-semibold">Distrito 20 bajo estado de emergencia</p>
+        <div class="mt-2 text-muted" style="font-size: 10px; letter-spacing: 1px;">Nivel de Riesgo: <span class="text-warning">Clase SSS</span></div>
     </div>
 
-    <br>
+    <div class="container my-5">
 
-    <div class="caja-margin">
-        <strong>Estructura de la Ciudad:</strong> Distrito 1: Conocido como la sala especial Chiyoda, es el centro neurálgico de la ciudad y alberga el Cuartel General del CCG. Por su alta seguridad, los ghouls lo llaman "el nido de palomas".
+        <h3 class="my-4 text-danger">Módulos</h3>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="tarjeta-interactiva p-4 rounded text-center border border-secondary" id="tarjeta-datos" style="background-color: #1a1a1a; cursor: pointer;">
+                    <h4 class="text-light m-0">📊 Base de Datos de Distritos</h4>
+                    <p class="text-muted mt-2 m-0 small">Consulta los registros de actividad Ghoul en tiempo real.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tarjeta-interactiva p-4 rounded text-center border border-secondary" id="tarjeta-quinque" style="background-color: #1a1a1a; cursor: pointer;">
+                    <h4 class="text-light m-0">⚔️ Inventario de Quinques</h4>
+                    <p class="text-muted mt-2 m-0 small">Acceso al armamento avanzado para investigadores de la CCG.</p>
+                </div>
+            </div>
+        </div>
 
-        <p>Distrito 4: Ubicado en Shinjuku, es una zona de transición donde los ghouls conviven de manera un poco más tolerante.</p>
+        <h1 class="mt-5 text-danger">Tokyo ghoul</h1>
+        <p>Tokyo Ghoul es una serie de manga escrita e ilustrada por Sui Ishida, serializada en la revista seinen Young Jump, con entrega semanal desde septiembre de 2011.</p>
 
-        <p>Distrito 20: En este distrito —una zona residencial más tranquila— se desarrolla gran parte de la historia inicial. Aquí operaba la pacífica cafetería Anteiku, hogar de Ken Kaneki.</p>
+        <hr class="border-secondary my-4">
 
-    </div>
+        <h2>Trama</h2>
+        <p><strong>Trata sobre la historia de Kaneki, un humano que de la noche a la mañana se convierte en un ghoul debido a que conoció a Rize (una ghoul) que se lo quería comer, pero tuvieron un accidente donde tuvieron que pasarle órganos vitales de Rize a Kaneki.</strong></p>
 
+        <hr class="border-secondary my-4">
 
-<hr>
+        <div id="carouselExampleAutoplaying" class="carousel slide shadow rounded overflow-hidden my-4" data-bs-ride="carousel" style="max-width: 700px; margin: 0 auto;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagen/Kaneki.jfif" class="d-block w-100" alt="Kaneki" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagen/Ken Kaneki.jfif" class="d-block w-100" alt="Ken Kaneki" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagen/Ken Kaneki.jpeg" class="d-block w-100" alt="Ken Kaneki Modo Ghoul" style="height: 400px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
 
-    <h2>Datos</h2>
+        <hr class="border-secondary my-4">
 
-    <p class="texto-color-destacado">
-        <strong>9. Temporadas:</strong> El anime de Tokyo Ghoul cuenta oficialmente con 4 temporadas y un total de 48 episodios.
+        <h2>¿En cuáles lugares se desarrolla la trama?</h2>
+        <div class="caja-padding p-3 bg-dark rounded border border-secondary mb-3">
+            <strong>Ciudad:</strong> Tokyo Ghoul se desarrolla en una versión alternativa y oscura de Tokio (Japón), una metrópolis secreta dividida en 24 distritos especiales. En este universo, humanos y ghouls coexisten en una tensa y mortal dinámica social.
+        </div>
+        <div class="caja-margin p-3 bg-dark rounded border border-secondary">
+            <strong>Estructura de la Ciudad:</strong> 
+            <p class="mt-2"><strong>Distrito 1:</strong> Conocido como la sala especial Chiyoda, es el centro neurálgico de la ciudad y alberga el Cuartel General del CCG. Por su alta seguridad, los ghouls lo llaman "el nido de palomas".</p>
+            <p><strong>Distrito 4:</strong> Ubicado en Shinjuku, es una zona de transition donde los ghouls conviven de manera un poco más tolerante.</p>
+            <p><strong>Distrito 20:</strong> En este distrito —una zona residencial más tranquila— se desarrolla gran parte de la historia inicial. Aquí operaba la pacífica cafetería Anteiku, hogar de Ken Kaneki.</p>
+        </div>
+
+        <hr class="border-secondary my-4">
+
+        <h2>Datos</h2>
+        <div class="p-3 bg-dark rounded border border-secondary mb-3">
+            <strong class="text-danger">Temporadas:</strong> El anime de Tokyo Ghoul cuenta oficialmente con 4 temporadas y un total de 48 episodios.
+            <ol class="mt-2">
+                <li>Temporada 1: Tokyo Ghoul (12 episodios).</li>
+                <li>Temporada 2: Tokyo Ghoul √A (12 episodios).</li>
+                <li>Temporada 3: Tokyo Ghoul:re (12 episodios).</li>
+                <li>Temporada 4: Tokyo Ghoul:re Parte 2 (12 episodios).</li>
+            </ol>
+        </div>
+        <div class="caja-bg-destacada p-3 bg-dark rounded border border-secondary mb-3">
+            <strong>Autor:</strong> Sui Ishida (石田 スイ, 28 de diciembre de 1986) es un mangaka de origen japonés reconocido mundialmente por su popular obra Tokyo Ghoul. 
+        </div>
+        <div class="caja-text-align p-3 bg-dark rounded border border-secondary">
+            <strong>Volúmenes:</strong> La obra original consta de 14 tomos recopilatorios, y cuenta con una secuela directa titulada Tokyo Ghoul:re (16 tomos). 
+        </div>
+
+        <hr class="border-secondary my-4">
         
-<ol>
-    <li>Temporada 1: Tokyo Ghoul (12 episodios).</li>
-    <li>Temporada 2: Tokyo Ghoul √A (12 episodios). </li>
-    <li>Temporada 3: Tokyo Ghoul:re (12 episodios) </li>
-    <li>Temporada 4: Tokyo Ghoul:re Parte 2 (12 episodios).</li>
-</ol>
+        <h3>Foto del anime</h3>
+        <p><em>Portada con los personajes más relevantes</em></p>
+        <img src="imagen/783646.jpg" alt="Portada de personajes relevantes" class="img-fluid border border-danger rounded shadow" style="max-width: 350px;">
 
-        <code></code> 
-    </p>
+        <hr class="border-secondary my-4">
 
-    <div class="caja-bg-destacada">
-        <strong>Autor:</strong> Sui Ishida (石田 スイ Ishida Sui Fukuoka, 28 de diciembre de 1986) es un mangaka de origen japonés. Es reconocido por su popular obra Tokyo Ghoul. 
-    </div>
-
-    <br>
-
-    <div class="caja-text-align">
-        <strong>Volúmenes:</strong>  La obra original consta de 14 tomos recopilatorios, y cuenta con una secuela directa titulada Tokyo Ghoul:re (16 tomos). 
-    </div>
-
-
-    
-<h3>Foto del anime</h3>
-<p> <em>Portada con los personajes mas relevantes</em></p>
-<img src="imagen/images.webp" alt="Veil">
-<br>
-<hr>
-
-<hr style="border: 1px solid #333;">
-
-<hr>
-
-    <h2>Ghoul o humano?</h2>
-
-    <p class="texto-fontsize">
-        <strong>Elige: <strong> ¡Alerta! Presencia de un Ghoul de clasificación SSS detectada en el Distrito 20. .
-    </p>
-
-    <div class="contenedor-interactivo">
-        <div class="caja-hover-1">
-            Pasa el mouse aquí: Modo Humano (Anteiku)
+        <h3 class="text-danger mt-5 mb-3">Preguntas Frecuentes del Archivo</h3>
+        <div class="accordion accordion-flush border border-secondary rounded overflow-hidden mb-5" id="acordionAnime">
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-dark text-danger fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        ¿Qué es un Ghoul?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#acordionAnime">
+                    <div class="accordion-body text-light bg-dark">
+                        Son criaturas de aspecto humano que solo pueden sobrevivir consumiendo carne humana o café. Poseen capacidades físicas sobrehumanas y un órgano cazador llamado Kagune.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button bg-dark text-danger fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cuál es la función de la CCG?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#acordionAnime">
+                    <div class="accordion-body text-light bg-dark">
+                        La Comisión de Contramedidas Ghoul es una agencia gubernamental encargada de investigar, rastrear y neutralizar las amenazas Ghoul para proteger a la población civil.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="caja-hover-2">
-            Pasa el mouse aquí: Modo Ghoul (Kagune)
+
+        <h2>¿Ghoul o humano?</h2>
+        <p><strong>Elige:</strong> ¡Alerta! Presencia de un Ghoul de clasificación SSS detectada en el Distrito 20.</p>
+
+        <div class="contenedor-interactivo mb-3">
+            <div class="caja-hover-1 btn btn-secondary w-100 mb-2" id="btnModoHumano" style="cursor:pointer;">
+                Modo Humano (Anteiku)
+            </div>
+            <div class="caja-hover-2 btn btn-danger w-100" id="btnModoGhoul" style="cursor:pointer;">
+                Modo Ghoul (Kagune)
+            </div>
+        </div>
+
+        <audio id="sndQuinque" src="musica/quinque-activate.mp3" preload="auto"></audio>
+        <audio id="sndKakuja" src="musica/kakuja-roar.mp3" preload="auto"></audio>
+
+        <div class="d-flex gap-3 my-3">
+            <button class="btn btn-outline-info flex-fill py-2 fw-bold" id="btnQuinque">Activar Quinque</button>
+            <button class="btn btn-outline-danger flex-fill py-2 fw-bold" id="btnKakuja">Desatar el Kakuja</button>
+        </div>
+
+        <div class="p-3 bg-dark border border-secondary rounded my-4" style="max-width: 200px;">
+            <span class="d-block mb-2 text-danger fw-bold small">Opening: Unravel 🎵</span>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/7aMOurgDB-o?si=nDCnb_85NvkzxJkY" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <hr class="border-secondary my-4">
+
+        <section class="my-5">
+            <h2 class="text-danger border-bottom border-danger pb-2 mb-4 text-uppercase tracking-wider">
+                Archivo de Datos: Fenómeno Ghoul
+            </h2>
+
+            <h3 class="text-light mb-3 fs-4">🧬 Clasificación por Tipo de Kagune</h3>
+            <p class="text-muted small mb-4">El órgano depredador de un ghoul se manifiesta en cuatro variedades distintas dependiendo de las células Rc:</p>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white border-danger h-100 shadow-sm">
+                        <div class="card-header bg-danger text-dark fw-bold text-center small">VELOCIDAD</div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Ukaku</h5>
+                            <p class="card-text text-secondary small">Se despliega en la zona de los hombros como alas. Ideal para ataques rápidos y de larga distancia, pero agota rápidamente la energía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-secondary text-dark border-dark h-100 shadow-sm">
+                        <div class="card-header bg-dark text-light fw-bold text-center small">DEFENSA</div>
+                        <div class="card-body text-white">
+                            <h5 class="card-title text-warning">Koukaku</h5>
+                            <p class="card-text text-light-emphasis small">Metálico y pesado, surge debajo del omóplato. Se transforma en robustos escudos o armaduras pesadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-black text-light border-secondary h-100 shadow" style="box-shadow: 0 0 10px rgba(255, 26, 26, 0.2) !important;">
+                        <div class="card-header border-secondary text-muted fw-bold text-center small">EQUILIBRIO</div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Rinkaku</h5>
+                            <p class="card-text text-muted small">Tentáculos que brotan de la espalda posterior. Poseen una capacidad de regeneración brutal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-danger-subtle text-danger-emphasis border-danger h-100 shadow-sm">
+                        <div class="card-header bg-danger text-white fw-bold text-center small">DISTANCIA</div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Bikaku</h5>
+                            <p class="card-text text-dark small">Forma de cola que nace del coxis. Ofrece un balance defensivo y ofensivo impecable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark border-danger text-light p-4 my-4 text-center shadow">
+                <h4 class="text-danger">🔬 Escáner de Entrada de la CCG</h4>
+                <p class="text-muted small">Coloca tu huella digital para medir tu nivel de Células Rc en sangre.</p>
+                <button id="btnEscaneo" class="btn btn-danger fw-bold my-2 px-4">INICIAR ESCANEO BIOMÉTRICO</button>
+                <div id="resultadoEscaneo" class="mt-3 fw-bold fs-5 text-secondary">Esperando sujeto...</div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <h3 class="text-light mb-3 fs-4"> Niveles de Clasificación de Riesgo</h3>
+                    <ul class="list-group shadow">
+                        <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center border-secondary">
+                            <span><strong>Clase SSS:</strong> Destrucción masiva.</span>
+                            <span class="badge bg-danger rounded-pill px-3">El Búho</span>
+                        </li>
+                        <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center border-secondary">
+                            <span><strong>Clase SS:</strong> Combate avanzado o Kakuja.</span>
+                            <span class="badge bg-warning text-dark rounded-pill px-3">Kaneki</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="text-light mb-3 fs-4"> Directivas de Contención</h3>
+                    <div class="alert alert-danger bg-opacity-10 text-white border border-danger p-3 mb-3" role="alert">
+                        <h4 class="alert-heading text-danger fw-bold fs-5"> Código Negro</h4>
+                        <p class="small m-0">Prohibido el tránsito civil nocturno en el sector.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 bg-dark bg-gradient rounded border-start border-danger border-4 shadow-sm mb-4">
+                <figure class="m-0">
+                    <blockquote class="blockquote">
+                        <p class="text-light fs-5 italic fw-semibold">"Si escribieras una historia conmigo como protagonista... ciertamente sería... una tragedia."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-danger mt-2">Ken Kaneki</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="p-5 mb-4 bg-dark text-light rounded-3 border border-secondary shadow-sm">
+            <div class="container-fluid py-3">
+                <h1 class="display-5 fw-bold text-warning">Manga
+                <p class="col-md-10 fs-5 text-muted">
+                    Es un enfoque arquitectónico para el desarrollo de software donde el código se divide en componentes **autónomos**, **independientes** y **especializados** que se comunican mediante APIs bien definidas.
+                </p>
+                <button class="btn btn-warning btn-lg fw-bold px-4" type="button">Leer Libro Blanco</button>
+            </div>
+        </div>
+
+<div class="card bg-black border-secondary text-success p-3 my-4 font-monospace" style="font-size: 13px; max-height: 180px; overflow-y: auto;">
+    <div class="text-muted border-bottom border-secondary pb-1 mb-2">📟 REGISTRO DE EVENTOS DEL DISTRITO 20</div>
+    <div id="consolaCcg"></div>
+</div>
+
+        <form class="bg-dark p-4 rounded border border-secondary text-light">
+            <div class="mb-3">
+                <label for="nombre" class="form-label fw-bold">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control bg-secondary text-white border-0" placeholder="Escribe tu nombre aquí">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label fw-bold">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" class="form-control bg-secondary text-white border-0" placeholder="ejemplo@correo.com">
+            </div>
+            <button type="submit" class="btn btn-danger w-100 fw-bold">Enviar Formulario</button>
+        </form>
+
+        <div class="mt-5 text-center">
+            <a href="Enlace1.html" class="btn btn-outline-danger btn-sm me-2">Mapa y música</a>
+            <a href="mailto:jc24-0350@unphu.edu.do" class="btn btn-outline-light btn-sm">Enviar un correo institucional</a>
+        </div>
+
+    </div> <div class="modal fade" id="modalAlerta" tabindex="-1" aria-labelledby="modalAlertaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border border-danger text-light">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title text-danger fw-bold" id="modalAlertaLabel">🚨 CONEXIÓN SEGURA CON LA CCG</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>Estás a punto de abrir una línea de comunicación directa con las fuerzas de contención del Distrito 20.</p>
+                    <div class="alert alert-warning small m-0" role="alert">
+                        <strong>Advertencia:</strong> El uso fraudulento de este canal será sancionado.
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Proceder al Reporte</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="javascript/javascript.js"></script>
 
-    <div class="contenedor-interactivo">
-        <button class="boton-click-1">
-            Haz clic aquí: Activar Quinque
-        </button>
-        <button class="boton-click-2">
-            Haz clic aquí: Desatar el Kakuja
-        </button>
-    </div>
-
-    <div class="reproductor-fijo">
-        <span class="etiqueta-reproductor">Opening: Unravel 🎵</span>
-        <iframe width="160" height="90" src="https://www.youtube.com/embed/7aMOurgDB-o?si=nDCnb_85NvkzxJkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-<section>
-    <h4>Personajes</h4>
-
-    <h5>Sus personajes principales son:</h5>
-    <ol>
-        <li>Ken Kaneki</li>
-        <li>Touka Kirishima</li>
-        <li>El Árbol Aogiri</li>
-    </ol>
-
-    <h6>Los secundarios:</h6>
-    <ul>
-        <li>Hideyoshi Nagachika (Hide)</li>
-        <li>Kishou Arima</li>
-        <li>El Búho (Yoshimura)</li>
-    </ul>
-</section>
-
-<hr>
-
-<h2>Tabla Informativa de Personajes</h2>
-<table class="tabla-ghoul">
-    <thead>
-        <tr>
-            <th>Personaje</th>
-            <th>Tipo de Ghoul / Kagune</th>
-            <th>Organización / Bando</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Ken Kaneki</td>
-            <td>Ghoul de un solo ojo (Rinkaku)</td>
-            <td>Anteiku / Árbol Aogiri</td>
-        </tr>
-
-        <tr>
-            <td>Touka Kirishima</td>
-            <td>Ghoul completo (Ukaku)</td>
-            <td>Anteiku</td>
-        </tr>
-
-        <tr>
-            <td>Koutaro Amon</td>
-            <td>Humano (Investigador CCG)</td>
-            <td>CCG (Comisión de Contramedidas Ghoul)</td>
-        </tr>
-
-        <tr>
-            <td>Shuu Tsukiyama</td>
-            <td>Ghoul completo (Koukaku)</td>
-            <td>Grupo de Kaneki / Anteiku</td>
-        </tr>
-
-        <tr>
-            <td>Juuzou Suzuya</td>
-            <td>Humano (Investigador CCG)</td>
-            <td>CCG</td>
-        </tr>
-    </tbody>
-</table>
-
-
-
-
-<hr style="border: 1px solid #333;">
-
-<form>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí">
-
-    <br><br> <label for="correo">Correo Electrónico:</label>
-    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
-
-
-
-    <button type="submit">Enviar Formulario</button>
-</form>
-
-<hr style="border: 1px solid #333;">
-
-<a href="enlace.html"></a>
-<a href="enlace2.html">Mapa y musica</a>
-
-<a href="jc24-0350@unphu.edu.do">Haz clic aquí para enviarme un correo</a>
-
-
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+    </script>
+</body>
+</html>
 
 </body>
 </html>
