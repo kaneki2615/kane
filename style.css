@@ -299,3 +299,150 @@ h1, h2, h3, h4 {
             background-color: #cc0000;
             box-shadow: 0 0 10px rgba(255, 26, 26, 0.5);
         }
+
+
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+
+        h1, h2, h3 {
+            color: #ff1a1a;
+            text-shadow: 0px 0px 8px rgba(255, 26, 26, 0.4);
+        }
+
+        /* Estilización para reproductores nativos */
+        audio {
+            width: 100%;
+            max-width: 400px;
+            filter: invert(90%) sepia(100%) saturate(500%) hue-rotate(310deg);
+        }
+
+        video {
+            border: 3px solid #ff1a1a;
+            border-radius: 6px;
+            box-shadow: 0 0 15px rgba(255, 26, 26, 0.4);
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+
+        h2, h3 {
+            color: #ff1a1a;
+            text-shadow: 0px 0px 8px rgba(255, 26, 26, 0.4);
+        }
+
+        
+        .enlaces-footer a {
+            color: #ff4d4d;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .enlaces-footer a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 5px #ff1a1a;
+        }
+
+       
+        .tarjeta-hover-bando {
+            background-color: #1a1a1a;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        /* Efecto Hover 1: Anteiku (Cambia a blanco) */
+        #bando-anteiku:hover {
+            background-color: #ffffff !important;
+            border-color: #ffffff !important;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+        #bando-anteiku:hover h4 {
+            color: #121212 !important;
+        }
+        #bando-anteiku:hover p {
+            color: #555555 !important;
+        }
+
+        /* Efecto Hover 2: CCG (Cambia a rojo sangre) */
+        #bando-ccg:hover {
+            background-color: #ff1a1a !important;
+            border-color: #ff1a1a !important;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 26, 26, 0.4);
+        }
+        #bando-ccg:hover h4 {
+            color: #ffffff !important;
+        }
+        #bando-ccg:hover p {
+            color: #000000 !important;
+            font-weight: bold;
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+
+        h1, h2, h3 {
+            color: #ff1a1a;
+            text-shadow: 0px 0px 8px rgba(255, 26, 26, 0.4);
+        }
+
+        /* Estilización para reproductores nativos */
+        audio {
+            width: 100%;
+            max-width: 400px;
+            filter: invert(90%) sepia(100%) saturate(500%) hue-rotate(310deg);
+        }
+
+        video {
+            border: 3px solid #ff1a1a;
+            border-radius: 6px;
+            box-shadow: 0 0 15px rgba(255, 26, 26, 0.4);
+        }
+
+        /* --- ESTILOS PARA MODO CLARO --- */
+body.modo-claro {
+    background-image: none !important; /* Quita la imagen de fondo oscura */
+    background-color: #f8f9fa !important; /* Fondo gris claro / blanco */
+    color: #212529 !important; /* Texto oscuro */
+}
+
+/* Forzamos a que las tarjetas y contenedores oscuros se vuelvan claros */
+body.modo-claro .bg-dark,
+body.modo-claro .card.bg-dark,
+body.modo-claro .accordion-item.bg-dark,
+body.modo-claro .accordion-body.bg-dark {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-color: #dee2e6 !important;
+}
+
+/* Cambia los botones del acordeón */
+body.modo-claro .accordion-button.bg-dark {
+    background-color: #e9ecef !important;
+    color: #dc3545 !important;
+}
+
+/* Ajusta los textos secundarios y deshabilitados para que sean legibles en fondo blanco */
+body.modo-claro .text-muted,
+body.modo-claro .text-secondary {
+    color: #6c757d !important;
+}
+
+/* Ajusta los inputs del formulario */
+body.modo-claro form .bg-secondary {
+    background-color: #e9ecef !important;
+    color: #212529 !important;
+    border: 1px solid #ced4da !important;
+}
